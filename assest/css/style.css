@@ -69,6 +69,16 @@ button img {
   padding: 10px 20px;
   font-size: 20px;
   font-weight: 400;
+  border-radius: 10px;
+}
+
+#navbar ul li:hover {
+  background: var(--dark);
+  color: var(--silent-main);
+}
+
+#navbar ul li:hover a {
+  color: var(--silent-main);
 }
 
 #navbar ul li a {
