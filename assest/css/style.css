@@ -80,19 +80,21 @@ button img {
   font-size: 20px;
   font-weight: 400;
   border-radius: 10px;
+  color: var(--dark);
 }
 
 #navbar ul li:hover {
   background: var(--dark);
-}
-
-#navbar ul li:hover a {
   color: var(--sub-tect-light);
 }
 
-#navbar ul li a {
+/* #navbar ul li:hover a {
+  color: var(--sub-tect-light);
+} */
+
+/* #navbar ul li a {
   color: var(--dark);
-}
+} */
 
 
 /* ========================================= First Section ====================================== */
