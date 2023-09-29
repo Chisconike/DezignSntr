@@ -550,12 +550,13 @@ button img {
   font-size: 15px;
 }
 
-#faqs .each p.hide {
+/* #faqs .each p.hide {
   display: none;
-}
+} */
 
 #faqs .about span {
   font-size: 30px;
+  cursor: pointer;
 }
 
 #faqs .about .what_is {
@@ -703,13 +704,17 @@ footer ul li {
 }
 
 footer ul li:hover {
-  background: var(--dark);
+  /* background: var(--dark); */
+  text-decoration: underline;
 }
 
+/* 
 footer ul li:hover a {
   color: var(--sub-tect-light);
-}
+} */
 
 footer ul li a {
   color: var(--dark);
 }
+
+/* ============================= End =========================================== */
