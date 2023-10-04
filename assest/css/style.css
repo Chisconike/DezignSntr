@@ -99,12 +99,13 @@ button img {
 
 /* ========================================= First Section ====================================== */
 #container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  justify-content: space-around;
   background: var(--sub-tect-light);
   padding: 100px 20px 20px 20px;
   width: 100%;
   margin: auto;
+  place-items: center;
 }
 
 #container .thumbnail {
@@ -152,7 +153,7 @@ button img {
 #container .box1,
 #container .box2,
 #container .box3 {
-  width: 180px;
+  max-width: 150px;
   height: 650px;
   border-radius: 90px;
   background: var(--Main);
@@ -201,11 +202,13 @@ button img {
   margin: auto;
   padding: 100px 20px 20px 10px;
   gap: 20px;
+  place-items: center;
 }
 
 
 #packages .our_packages {
   padding: 40px 20px 20px 10px;
+  max-width: 400px;
 }
 
 
@@ -253,6 +256,7 @@ button img {
   border-radius: 10px;
   margin: 5px;
   background: var(--light-dark);
+  max-width: 500px;
 }
 
 #packages .our_packages2 div img {
@@ -319,8 +323,9 @@ button img {
 }
 
 #case_study .pics_case .space {
-  margin-top: 200px;
-  width: 650px;
+  margin-top: 0px;
+  max-width: 500px;
+  margin-right: 20px;
 }
 
 .box2 {
@@ -396,12 +401,16 @@ button img {
   opacity: 100;
 }
 
-.box2 div .healthful_img2,
+
 .box2 div .healthful_img {
   width: 100%;
   margin: 20px 0;
 }
 
+.box2 div .healthful_img2 {
+  width: 100%;
+  margin: 20px 0;
+}
 
 /* ============================= investable =========================================== */
 
@@ -429,17 +438,17 @@ button img {
 
 
 .box3 {
-  padding: 100px 0px 0px 0px;
+  padding: 100px 20px 0px 20px;
   gap: 50px;
   align-items: center;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 /* ============================= design =========================================== */
 .design {
   width: 100%;
-  margin-top: 100px;
+  margin-top: -50px;
 }
 
 .design img {
