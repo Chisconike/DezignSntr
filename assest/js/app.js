@@ -15,6 +15,11 @@ $(document).ready(function () {
       color.css('color', '#E9FF9D');
     }
   })
+
+
+  $('.toggle').click(function () {
+    $('.ul').toggle()
+  })
 })
 
 
