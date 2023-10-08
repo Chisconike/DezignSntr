@@ -419,7 +419,7 @@ button img {
   border-radius: 10px;
   margin: 5px;
   background: var(--light-dark);
-  max-width: 500px;
+  width: 95%;
 }
 
 #packages .our_packages2 div img {
@@ -452,15 +452,33 @@ button img {
     margin: auto;
     margin-right: 0px;
   }
+
+  #packages .our_packages2 div {
+    text-align: center;
+    padding: 30px 50px;
+    border-radius: 10px;
+    margin: auto;
+    background: var(--light-dark);
+    width: 95%;
+  }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
   #packages .our_packages2 {
     display: grid;
     grid-template-columns: 1fr;
-    margin: auto;
     margin-right: 0px;
+    margin: auto;
     gap: 10px;
+  }
+
+  #packages .our_packages2 div {
+    text-align: center;
+    padding: 30px 50px;
+    border-radius: 10px;
+    margin: auto;
+    background: var(--light-dark);
+    width: 95%;
   }
 }
 
@@ -754,7 +772,6 @@ button img {
 
 .services {
   margin-top: -50px;
-  width: 600px;
   padding: 0px 20px;
 }
 
@@ -769,7 +786,7 @@ button img {
 
 .services p {
   color: var(--grey);
-  width: 500px;
+  width: 40%;
 }
 
 .what_we_do {
@@ -839,7 +856,7 @@ button img {
   color: var(--silent-main);
   font-size: 50px;
   font-family: Unbounded;
-  width: 450px;
+  width: 45%;
 }
 
 #faqs .faq_s img.faq_logo {
@@ -930,6 +947,16 @@ button img {
 
 }
 
+@media only screen and (max-width: 500px) {
+  #faqs .faq_s h2 {
+    color: var(--silent-main);
+    font-size: 40px;
+    font-family: Unbounded;
+    width: 45%;
+  }
+}
+
+
 /* ============================= How it works =========================================== */
 
 .how_it_works {
@@ -1013,7 +1040,7 @@ button img {
 .help .send_msg h2 {
   color: var(--silent-main);
   font-size: 50px;
-  width: 400px;
+  width: 60%;
   font-family: Unbounded;
 }
 
@@ -1083,6 +1110,7 @@ button img {
     /* padding: 0px 20px; */
   }
 
+
 }
 
 
@@ -1119,6 +1147,14 @@ button img {
   .help .data a {
     color: var(--sub-tect-light);
     font-size: 20px;
+  }
+
+
+  .help .send_msg h2 {
+    color: var(--silent-main);
+    font-size: 40px;
+    width: 60%;
+    font-family: Unbounded;
   }
 }
 
