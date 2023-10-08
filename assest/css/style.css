@@ -1072,6 +1072,7 @@ button img {
   outline: none;
   background: var(--light-dark);
   resize: none;
+  color: var(--light);
 }
 
 .help form input::placeholder,
