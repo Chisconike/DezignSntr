@@ -1165,6 +1165,12 @@ footer ul li a {
     display: block;
     text-align: center;
   }
+
+  footer ul li {
+    display: inline-flex;
+    padding: 20px 5px;
+    border-radius: 10px;
+  }
 }
 
 /* ============================= End =========================================== */
