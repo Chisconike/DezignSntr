@@ -20,6 +20,10 @@ $(document).ready(function () {
   $('.toggle').click(function () {
     $('.ul').toggle()
   })
+
+  $('.ul').click(function () {
+    $(this).toggle()
+  })
 })
 
 
