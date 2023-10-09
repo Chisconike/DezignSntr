@@ -466,6 +466,7 @@ button img {
     margin: auto;
     background: var(--light-dark);
     width: 95%;
+    margin: 10px auto;
   }
 }
 
@@ -485,6 +486,16 @@ button img {
     margin: auto;
     background: var(--light-dark);
     width: 95%;
+  }
+
+}
+
+@media only screen and (max-width: 500px) {
+  #packages .our_packages h1 {
+    color: var(--silent-main);
+    font-size: 40px;
+    font-weight: 600;
+    font-family: Unbounded;
   }
 }
 
@@ -745,6 +756,13 @@ button img {
     height: 350px;
   } */
 
+  #case_study .recent_case div h1 {
+    color: var(--silent-main);
+    font-size: 40px;
+    font-weight: 600;
+    font-family: Unbounded;
+    width: 200px;
+  }
 }
 
 @media only screen and (max-width: 500px) {
