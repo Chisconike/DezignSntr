@@ -49,7 +49,8 @@ button img {
   --Main: #D5FF3F;
   --grey: #6A6960;
   --silent-main: #E9FF9D;
-  --light: #fff
+  --light: #fff;
+  --clear: transparent;
 }
 
 /* ====================================== NavBar ========================================= */
@@ -92,7 +93,12 @@ button img {
 
 #navbar .toggle {
   display: none;
+  background: var(--clear);
+  color: var(--black);
+  font-size: 25px;
 }
+
+/* ============================================================================ */
 
 @media only screen and (max-width: 956px) {
   #navbar button {
@@ -130,7 +136,7 @@ button img {
   #navbar .toggle {
     display: block;
     position: fixed;
-    top: 10px;
+    top: 5px;
     right: 20px;
   }
 
