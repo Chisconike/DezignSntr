@@ -53,6 +53,27 @@ button img {
   --clear: transparent;
 }
 
+
+/* ================================== Animations ===================================== */
+
+.animate {
+  opacity: 0;
+  transition: all 1s;
+  transform: translateX(-200px);
+}
+
+.display {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+@media only screen and (max-width: 500px) {
+  .animate {
+    transition: none;
+  }
+}
+
+
 /* ====================================== NavBar ========================================= */
 
 #navbar {
@@ -818,14 +839,18 @@ button img {
 }
 
 .what_we_do div {
-  display: flex;
-  justify-content: space-between;
   align-items: center;
+  display: block;
   padding: 20px;
   font-size: 25px;
   border-top: 1px solid var(--grey);
   color: var(--grey);
   font-family: Unbounded;
+  position: relative;
+}
+
+.what_we_do div img {
+  float: right;
 }
 
 .what_we_do div.last {
@@ -836,6 +861,38 @@ button img {
   width: 40px;
   height: 40px;
 }
+
+.more_container {
+  display: none;
+}
+
+.what_we_do div .more {
+  background: var(--silent-main);
+  padding: 0px;
+  width: 40%;
+  text-align: center;
+  border-radius: 5px;
+  position: absolute;
+  bottom: -50px;
+  right: 100px;
+  z-index: 200;
+  border-top: none !important;
+  display: none;
+  transition: all 1s;
+}
+
+.more h3 {
+  padding: 10px 0px;
+  font-family: Unbounded;
+}
+
+.more p {
+  padding: 10px 0px;
+  font-family: Unbounded;
+  font-weight: 300;
+  font-size: 20px;
+}
+
 
 @media only screen and (max-width: 500px) {
   .design {
@@ -856,6 +913,20 @@ button img {
   .services p {
     color: var(--grey);
     width: 300px;
+  }
+
+  .what_we_do div .more {
+    background: var(--silent-main);
+    padding: 0px;
+    width: 70%;
+    text-align: center;
+    border-radius: 5px;
+    position: absolute;
+    bottom: -40px;
+    right: 0px;
+    z-index: 1000;
+    border-top: none !important;
+    display: none;
   }
 
 }

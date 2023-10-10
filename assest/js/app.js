@@ -21,9 +21,64 @@ $(document).ready(function () {
     $('.ul').toggle()
   })
 
-  $('.ul').click(function () {
-    $(this).toggle()
+  // for our service popup
+
+  $('.click1').click(function () {
+    $('.more1').toggle()
+    $('.more2').hide()
+    $('.more3').hide()
+    $('.more4').hide()
+  });
+
+  $('.click2').click(function () {
+    $('.more2').toggle()
+    $('.more1').hide()
+    $('.more3').hide()
+    $('.more4').hide()
+  });
+
+  $('.click3').click(function () {
+    $('.more3').toggle()
+    $('.more1').hide()
+    $('.more2').hide()
+    $('.more4').hide()
+  });
+
+  $('.click4').click(function () {
+    $('.more4').toggle()
+    $('.more1').hide()
+    $('.more2').hide()
+    $('.more3').hide()
+  });
+
+
+
+
+
+
+
+  // for animation 
+
+  const check = new IntersectionObserver((items) => {
+    items.forEach((item) => {
+      if (item.isIntersecting) {
+        item.target.classList.add('display');
+      } else {
+        item.target.classList.remove('display');
+      }
+    })
   })
+
+  const animate = document.querySelectorAll('.animate');
+  animate.forEach((el) => check.observe(el));
+
+
+
+
+
+
+
 })
+
 
 
