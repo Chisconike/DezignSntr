@@ -40,10 +40,6 @@ button img {
     'opsz' 24
 }
 
-hr.animate {
-  color: var(--grey);
-}
-
 /* ================================== Root Colors ===================================== */
 :root {
   --sub-tect-light: #F8FFDD;
@@ -889,6 +885,11 @@ hr.animate {
   display: none;
   transition: all 1s;
   /* border: none !important; */
+}
+
+.what_we_do hr {
+  color: var(--grey) !important;
+  -webkit-color: var(--grey) !important;
 }
 
 .more h3 {
