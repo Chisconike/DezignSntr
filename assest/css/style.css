@@ -40,6 +40,10 @@ button img {
     'opsz' 24
 }
 
+hr {
+  color: var(--grey);
+}
+
 /* ================================== Root Colors ===================================== */
 :root {
   --sub-tect-light: #F8FFDD;
@@ -838,15 +842,20 @@ button img {
   padding: 50px 0;
 }
 
-.what_we_do div {
+.what_we_do>div {
   align-items: center;
   display: block;
   padding: 20px;
   font-size: 25px;
-  border-top: 1px solid var(--grey);
+  /* border-top: 1px solid var(--grey); */
   color: var(--grey);
   font-family: Unbounded;
   position: relative;
+  z-index: 100;
+}
+
+.what_we_do div span {
+  z-index: 1;
 }
 
 .what_we_do div img {
@@ -854,7 +863,7 @@ button img {
 }
 
 .what_we_do div.last {
-  border-bottom: 1px solid var(--grey);
+  /* border-bottom: 1px solid var(--grey); */
 }
 
 .what_we_do img {
@@ -868,22 +877,24 @@ button img {
 
 .what_we_do div .more {
   background: var(--silent-main);
-  padding: 0px;
+  padding: 20px 30px;
   width: 40%;
   text-align: center;
   border-radius: 5px;
   position: absolute;
   bottom: -50px;
   right: 100px;
-  z-index: 200;
-  border-top: none !important;
+  /* z-index: 2000; */
+  /* border-top: none !important; */
   display: none;
   transition: all 1s;
+  /* border: none !important; */
 }
 
 .more h3 {
   padding: 10px 0px;
   font-family: Unbounded;
+  color: var(--black);
 }
 
 .more p {
@@ -891,6 +902,7 @@ button img {
   font-family: Unbounded;
   font-weight: 300;
   font-size: 20px;
+  color: var(--black);
 }
 
 
@@ -915,6 +927,10 @@ button img {
     width: 300px;
   }
 
+  hr {
+    color: var(--grey) !important;
+  }
+
   .what_we_do div .more {
     background: var(--silent-main);
     padding: 0px;
@@ -924,8 +940,7 @@ button img {
     position: absolute;
     bottom: -40px;
     right: 0px;
-    z-index: 1000;
-    border-top: none !important;
+    z-index: 2000;
     display: none;
   }
 
