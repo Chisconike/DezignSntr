@@ -40,7 +40,7 @@ button img {
     'opsz' 24
 }
 
-hr {
+hr.animate {
   color: var(--grey);
 }
 
@@ -51,7 +51,7 @@ hr {
   --black: #000;
   --light-dark: #131213;
   --Main: #D5FF3F;
-  --grey: #6A6960;
+  --grey: #6b6a61;
   --silent-main: #E9FF9D;
   --light: #fff;
   --clear: transparent;
@@ -851,7 +851,7 @@ hr {
   color: var(--grey);
   font-family: Unbounded;
   position: relative;
-  z-index: 100;
+  z-index: 1;
 }
 
 .what_we_do div span {
@@ -884,7 +884,7 @@ hr {
   position: absolute;
   bottom: -50px;
   right: 100px;
-  /* z-index: 2000; */
+  z-index: 200;
   /* border-top: none !important; */
   display: none;
   transition: all 1s;
@@ -927,9 +927,6 @@ hr {
     width: 300px;
   }
 
-  hr {
-    color: var(--grey) !important;
-  }
 
   .what_we_do div .more {
     background: var(--silent-main);
@@ -937,9 +934,11 @@ hr {
     width: 70%;
     text-align: center;
     border-radius: 5px;
-    position: absolute;
-    bottom: -40px;
+    position: relative;
+    bottom: -10px;
     right: 0px;
+    left: 0;
+    margin: auto;
     z-index: 2000;
     display: none;
   }
