@@ -51,12 +51,6 @@ $(document).ready(function () {
     $('.more3').hide()
   });
 
-
-
-
-
-
-
   // for animation 
 
   const check = new IntersectionObserver((items) => {
@@ -71,12 +65,6 @@ $(document).ready(function () {
 
   const animate = document.querySelectorAll('.animate');
   animate.forEach((el) => check.observe(el));
-
-
-
-
-
-
 
 })
 

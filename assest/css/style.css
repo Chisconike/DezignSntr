@@ -40,6 +40,8 @@ button img {
     'opsz' 24
 }
 
+
+
 /* ================================== Root Colors ===================================== */
 :root {
   --sub-tect-light: #F8FFDD;
@@ -72,6 +74,7 @@ button img {
     transition: none;
   }
 }
+
 
 
 /* ====================================== NavBar ========================================= */
@@ -119,8 +122,6 @@ button img {
   font-size: 25px;
 }
 
-/* ============================================================================ */
-
 @media only screen and (max-width: 956px) {
   #navbar button {
     display: none;
@@ -162,6 +163,8 @@ button img {
   }
 
 }
+
+
 
 /* ========================================= First Section ====================================== */
 #container {
@@ -234,7 +237,6 @@ button img {
   justify-content: flex-end;
   align-items: center;
 }
-
 
 #container .box-a p,
 #container .box-b p,
@@ -386,6 +388,8 @@ button img {
 
 }
 
+
+
 /* ========================================= Package Section====================================== */
 #packages {
   display: grid;
@@ -400,7 +404,6 @@ button img {
   padding: 40px 20px 20px 10px;
   max-width: 400px;
 }
-
 
 #packages .our_packages span,
 #case_study .recent_case div span {
@@ -520,6 +523,8 @@ button img {
   }
 }
 
+
+
 /* ============================= Case Study =========================================== */
 
 #case_study {
@@ -538,7 +543,6 @@ button img {
   padding: 20px;
 
 }
-
 
 #case_study .recent_case div h1 {
   color: var(--silent-main);
@@ -616,7 +620,6 @@ button img {
   padding: 10px 0;
 }
 
-
 .box2 .healthful div .control1 {
   position: absolute;
   top: 70px;
@@ -648,7 +651,6 @@ button img {
   opacity: 100;
 }
 
-
 .box2 div .healthful_img {
   width: 100%;
   margin: 20px 0;
@@ -658,7 +660,6 @@ button img {
   width: 100%;
   margin: 20px 0;
 }
-
 
 .box3 .healthful_img,
 .box3 .healthful_img2 {
@@ -681,7 +682,6 @@ button img {
   border-radius: 50%;
   opacity: 0;
 }
-
 
 .box3 {
   padding: 100px 20px 0px 20px;
@@ -732,6 +732,7 @@ button img {
   }
 
 }
+
 
 @media only screen and (max-width: 500px) {
   #case_study .recent_case .img1 {
@@ -799,6 +800,8 @@ button img {
     margin-right: 20px;
   }
 }
+
+
 
 /* ============================= design =========================================== */
 .design {
@@ -945,6 +948,8 @@ button img {
   }
 
 }
+
+
 
 /* ============================= faqs =========================================== */
 
@@ -1128,6 +1133,8 @@ button img {
   }
 }
 
+
+
 /* ============================= Help =========================================== */
 
 .help {
@@ -1221,7 +1228,6 @@ button img {
     /* padding: 0px 20px; */
   }
 
-
 }
 
 
@@ -1268,6 +1274,7 @@ button img {
     font-family: Unbounded;
   }
 }
+
 
 
 /* ============================= Footer =========================================== */
